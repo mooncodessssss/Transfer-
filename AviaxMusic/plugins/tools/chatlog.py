@@ -1,7 +1,7 @@
 import random
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from config import LOGGER_ID as LOG_GROUP_ID
+from config import LOG_GROUP_ID 
 from AviaxMusic import app 
 from pyrogram.errors import RPCError
 from typing import Union, Optional
