@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
-from AnieXEricaMusic import app
+from AviaxMusic import app
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message, User
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden, PeerIdInvalid, ChatAdminRequired
 from pyrogram.enums import ChatAction, ChatType, MessageEntityType
 from pyrogram import Client, filters, enums
-from AnieXEricaMusic.misc import SUDOERS
+from AviaxMusic.misc import SUDOERS
 
 buttons = [
     [
@@ -16,7 +16,7 @@ buttons = [
     ],
 ]
 
-@app.on_message(filters.command(["promo"]) & SUDOERS)
+@app.on_message(filters.command(["untold"]) & SUDOERS)
 async def promos(client, message: Message):
     AMBOT = f"""{app.mention},
 🤖 ᴀᴅᴠᴀɴᴄᴇᴅ ᴍᴜsɪᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏᴄʜᴀᴛs 🤖
