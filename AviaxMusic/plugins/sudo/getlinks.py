@@ -5,7 +5,7 @@ from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, F
 import os
 import json
 from pyrogram.types import Message
-from AnieXEricaMusic.misc import SUDOERS
+from AviaxMusic.misc import SUDOERS
 
 @app.on_message(filters.command(["link", "invitelink"], prefixes=["/","!"]) & SUDOERS)
 async def link_command_handler(client: Client, message: Message):
