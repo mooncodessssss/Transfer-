@@ -2,9 +2,9 @@ import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import InviteRequestSent
-from AnieXEricaMusic import app
-from AnieXEricaMusic.misc import SUDOERS
-from AnieXEricaMusic.utils.database import get_assistant
+from AviaxMusic import app
+from AviaxMusic.misc import SUDOERS
+from AviaxMusic.utils.database import get_assistant
 from config import LOG_GROUP_ID
 
 @app.on_message(filters.command(["leaveall", f"leaveall@{app.username}"]) & SUDOERS)
