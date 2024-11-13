@@ -1,11 +1,11 @@
-from AnieXEricaMusic.core.userbot import assistants
-from AnieXEricaMusic import userbot as us, app
+from AviaxMusic.core.userbot import assistants
+from AviaxMusic import userbot as us, app
 from pyrogram import filters
 from pyrogram.types import Message
-from AnieXEricaMusic.misc import SUDOERS
+from AviaxMusic.misc import SUDOERS
 
 
-@app.on_message(filters.command(["asspfp", "setpfp"]) & SUDOERS)
+@app.on_message(filters.command(["moonpfp", "cool"]) & SUDOERS)
 async def set_pfp(_, message: Message):
     if message.reply_to_message.photo:
         fuk = await message.reply_text("𝙉𝙤 𝘾𝙝𝙖𝙣𝙜𝙞𝙣𝙜 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩'𝙨 𝙋𝙧𝙤𝙛𝙞𝙡𝙚 𝙋𝙞𝙘...")
