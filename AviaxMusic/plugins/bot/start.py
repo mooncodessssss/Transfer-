@@ -23,6 +23,7 @@ from AviaxMusic.utils.formatters import get_readable_time
 from AviaxMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
+from AviaxMusic.misc import SUDOERS
 
 
 @app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
