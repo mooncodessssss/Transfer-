@@ -1,4 +1,4 @@
-from nexichat import db
+from AviaxMusic import db
 
 chatsdb = db.chatsdb
 
