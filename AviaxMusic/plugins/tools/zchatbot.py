@@ -8,8 +8,8 @@ from pyrogram.errors import UserNotParticipant
 from pyrogram.enums import ChatAction, ChatMemberStatus as CMS
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 from deep_translator import GoogleTranslator
-from AviaxMusic.database.chats import add_served_chat
-from AviaxMusic.database.users import add_served_user
+from AviaxMusic.tools.chats import add_served_chat
+from AviaxMusic.tools.users import add_served_user
 from config import MONGO_URL
 from AviaxMusic import nexichat, mongo, LOGGER, db
 from AviaxMusic.mplugin.helpers import chatai, CHATBOT_ON, languages
