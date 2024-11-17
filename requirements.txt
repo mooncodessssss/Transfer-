@@ -26,4 +26,3 @@ uvloop
 yt-dlp
 youtube-search
 youtube-search-python
-deep-translator
