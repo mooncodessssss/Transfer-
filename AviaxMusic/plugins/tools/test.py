@@ -8,8 +8,7 @@ from config import OWNER_ID
 async def brah3(app :app, message:Message):
            text = f"♻️ ❛{message.from_user.mention}❜ 💞™🌙 ɪɴᴠɪᴛᴇᴅ "
            x = 0
-           for user in message.video_chat_members_invited.users:
-             try:
+           for user in message.video_chat_members_invited.users:         
            await app.send_message(member.chat.id,  
             text += f"🖤[{user.first_name}](tg://user?id={user.id})🖤! "
                x += 1
