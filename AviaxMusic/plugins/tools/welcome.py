@@ -22,7 +22,7 @@ async def greet_group(_, member: ChatMemberUpdated):
     try:
         await app.send_message(
             chat_id,
-            f"Hi{user.mention},glad you’re here!"
+            f"Hi {user.mention}, glad you’re here!"
         )
     except Exception as e:
         LOGGER.error(f"Failed to send welcome message: {e}")
