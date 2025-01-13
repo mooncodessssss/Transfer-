@@ -38,5 +38,3 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             
             # Optionally, remove the QR code image after sending
             os.remove(qr_code_path)
-
-run(idel())
