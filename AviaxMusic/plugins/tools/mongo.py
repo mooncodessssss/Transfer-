@@ -2,11 +2,11 @@ import re
 from pymongo import MongoClient
 from pyrogram import filters
 from pyrogram.types import Message
-from VIPMUSIC import app
+from AviaxMusic import app
 import os
 from config import OWNER_ID
-from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.utils.pastebin import VIPbin
+from AviaxMusic.misc import SUDOERS
+from AviaxMusic.utils.pastebin import AviaxBin
 
 
 MONGO_DB_URI = os.getenv("MONGO_DB_URI")
@@ -33,7 +33,7 @@ async def mongo_check_command(client, message: Message):
         
         
         if len(result) > 4096:
-            paste_url = await VIPbin(result)
+            paste_url = await AviaxBin(result)
             await ok.delete()
             await message.reply(f"**The database list is too long to send here. You can view it at:** {paste_url}")
         else:
