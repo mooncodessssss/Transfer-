@@ -45,5 +45,5 @@ async def greet_new_member(_, member: ChatMemberUpdated):
         user = member.new_chat_member.user
         await app.send_message(
             member.chat.id,
-            f"Welcome {user.first_name} to the chat!"
+            f"Hi {user.first_name}, Glad you’re here!!"
         )
