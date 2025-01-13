@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import ChatMemberUpdated
-from ANNIEMUSIC import app
+from AviaxMusic import app
 from config import OWNER_ID
 
 @app.on_chat_member_updated(filters.group)
