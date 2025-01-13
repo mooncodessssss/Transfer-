@@ -6,11 +6,11 @@ from config import OWNER_ID
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-       await msg.reply("💫𝙑𝙊𝙄𝘾𝙀 𝘾𝙃𝘼𝙏 𝙎𝙏𝘼𝙍𝙏𝙀𝘿💫")
+       await msg.reply("🌙Vᴏɪᴄᴇ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🌙")
 # vc off
 @app.on_message(filters.video_chat_ended)
 async def brah2(_, msg):
-       await msg.reply("⭐𝑽𝑶𝑰𝑪𝑬 𝑪𝑯𝑨𝑻 𝑬𝑵𝑫𝑬𝑫⭐")
+       await msg.reply(" 🌙Vᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅᴇᴅ🌙")
 
 
 @app.on_message(filters.command("math", prefixes="/"))
