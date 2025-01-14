@@ -1,6 +1,6 @@
 from pyrogram import Client, raw
 from pyrogram.raw.types import UpdateGroupCallParticipants
-from PURVIMUSIC import app
+from AviaxMusic import app
 
 @app.on_raw_update()
 async def handle_video_chat_participants(client, update, users, chats):
